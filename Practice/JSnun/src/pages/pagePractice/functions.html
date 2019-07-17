@@ -1,0 +1,34 @@
+{% extends "base-layout.html" %}
+	{% block PageTitle %}
+	<h2>This is Functions Example</h2>
+
+   <form>
+      <input type="button" onclick="anyName(' Shakib ', 26)" value="Say about it" />
+      <br>
+      <input type="button" onclick="secfunc()" value="Say about it" />
+   </form>
+	{% endblock %}
+
+
+      {% block JScode %}
+      function anyName(name , age){
+         document.write(name + "is " + age + " years old.");
+      }
+
+
+      function concat(first, last){
+         var full;
+         full = first + last;
+         return full;
+      }
+      function secfunc(){
+         var result;
+         result = concat('Full Name', 'Last Name');
+         document.write(result);
+      }
+     
+      {% endblock %}
+
+
+
+

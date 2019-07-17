@@ -1,0 +1,19 @@
+{% extends "base-layout.html" %}
+	{% block PageTitle %}
+	<h2>This is Variable Example</h2>
+	{% endblock %}
+
+
+      {% block JScode %}
+			var myVar = "global";      // Declare a global variable
+            function checkscope( ) {
+               var myVar = "local";    // Declare a local variable
+               document.write(myVar);
+            }
+            document.write(myVar);
+     
+      {% endblock %}
+
+
+
+

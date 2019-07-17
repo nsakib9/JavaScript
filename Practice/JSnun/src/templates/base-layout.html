@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "partials/head.html" %}
+</head>
+<body>
+	<header class="base_layout">
+		<ul>	
+			<li><a href="../index.html">Go to Main Page</a></li>
+		</ul>
+	  
+	</header>
+<div class="page">
+{% block PageTitle %}
+
+
+
+{% endblock %}
+
+	<script type = "text/javascript">
+	{% block JScode %}
+
+
+
+	{% endblock %}
+	</script>
+	
+</div> <!-- .page end -->
+
+<div class="base_foot">
+<h2>Other Examples</h2>
+	{% include "partials/menu.html" %}
+</div>
+
+</body>
+</html>

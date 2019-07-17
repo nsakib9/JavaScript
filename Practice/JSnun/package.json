@@ -1,0 +1,28 @@
+{
+  "name": "gulp4-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.5",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-bootstrap": "^2.0.3",
+    "gulp-cache": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^6.0.0"
+  }
+}

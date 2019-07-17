@@ -1,0 +1,23 @@
+{% extends "base-layout.html" %}
+	{% block PageTitle %}
+	<h2>This is If Else Example</h2>
+	{% endblock %}
+
+
+   {% block JScode %}
+         var book = "science";
+            if( book == "history" ) {
+               document.write("<b>History Book</b>");
+            } else if( book == "maths" ) {
+               document.write("<b>Maths Book</b>");
+            } else if( book == "economics" ) {
+               document.write("<b>Economics Book</b>");
+            } else {
+               document.write("<b>Unknown Book</b>");
+            }
+  
+   {% endblock %}
+
+
+
+
