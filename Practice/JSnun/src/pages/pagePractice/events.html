@@ -1,0 +1,26 @@
+{% extends "base-layout.html" %}
+	{% block PageTitle %}
+	<div onmouseover="" onmouseout="out()">
+      <h2>This is Events Example</h2>
+   </div>
+   
+
+   <code>
+
+   </code>
+	{% endblock %}
+
+
+      {% block JScode %}
+			function over(){
+            document.write("Mouse Over");
+         }
+         function out(){
+            document.write("Mouse Out");
+         }
+     
+      {% endblock %}
+
+
+
+
