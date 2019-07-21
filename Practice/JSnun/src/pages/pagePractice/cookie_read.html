@@ -1,0 +1,17 @@
+{% extends "base-layout.html" %}
+	{% block PageTitle %}
+	<h2>This is Cookie Example With Read</h2>
+	{% endblock %}
+
+
+      {% block JScode %}
+         var visitor_name = prompt("What's your name?","");
+         var curdate = new Date();
+         curdate.setMonth(curdate.getMonth() + 6);
+         var cookie_date  = curdate.toUTCString();
+         final_cookie = "my_cookie=" + encodeURIComponent(visitor_name) + ";expires_on = " + cookie_date; 
+         document.cookie = final_cookie;
+         alert(final_cookie); 	
+
+     
+      {% endblock %}

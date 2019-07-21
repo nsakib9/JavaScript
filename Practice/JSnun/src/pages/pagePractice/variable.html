@@ -6,11 +6,25 @@
 
       {% block JScode %}
 			var myVar = "global";      // Declare a global variable
-            function checkscope( ) {
+            function checkscope(){
                var myVar = "local";    // Declare a local variable
                document.write(myVar);
             }
             document.write(myVar);
+
+
+
+//Cookie Example in this page
+
+var visitor_name = prompt("What's your name?","");
+var expr_date = new Date("December 30, 2012");
+var cookie_date = expr_date.toUTCString();
+final_cookie = "Name =" + encodeURIComponent(visitor_name) + ";expires_on = " + cookie_date;
+document.cookie = final_cookie;
+alert(final_cookie); 
+
+document.write(final_cookie);
+
      
       {% endblock %}
 
