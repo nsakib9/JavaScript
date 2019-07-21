@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weight Converter</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body{
+          mrgin-top:70px;
+          background: #333;
+          color: #fff;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+          <form class="" action="index.html" method="post">
+            <div class="form-group">
+              <input type="number" id="lbsInput"
+              class="form-control form-control-lg" placeholder="Enter Value">
+            </div>
+          </form>
+
+          <div class="" id="output">
+            <div class="card bg-primary mb-2">
+              <div class="card-block">
+                <h4>Grams:</h4>
+                <div id="gramsOutpt">
+
+                </div>
+              </div>
+            </div>
+            <div class="card bg-success mb-2">
+              <div class="card-block">
+                <h4>KiloGrams:</h4>
+                <div id="kgOutput">
+
+                </div>
+              </div>
+            </div>
+            <div class="card bg-danger mb-2">
+              <div class="card-block">
+                <h4>Ounces:</h4>
+                <div id="ozOutput">
+
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- .outpur end -->
+
+        </div> <!-- .col-md-6 end -->
+      </div> <!-- .row end -->
+    </div> <!-- .container end -->
+
+    <script type="text/javascript">
+      document.getElementById('output').style.visibility = 'hidden'; //make output hidden.
+      document.getElementById('lbsInput').addEventListener('input',function(e){
+        let lbs = e.target.value;
+        document.getElementById('output').style.visibility = 'visible'; //make outpur visible
+        document.getElementById('gramsOutpt').innerHTML = lbs/0.0022046;
+        document.getElementById('kgOutput').innerHTML = lbs/2.2046;
+        document.getElementById('ozOutput').innerHTML = lbs*16;
+      });
+
+    </script>
+  </body>
+</html>
