@@ -1,0 +1,18 @@
+{% extends "base-layout.html" %}
+	{% block PageTitle %}
+	<h2>This is Redirection Example</h2>
+   <form>
+      <input type="button" onClick="redirect()" value="click to redirect" />
+   </form>
+
+	{% endblock %}
+
+
+      {% block JScode %}
+      function redirect(){
+         window.location = "https://navana-realestate.com"; 
+      }
+      setTimeout('redirect()',5000);
+
+
+      {% endblock %}
