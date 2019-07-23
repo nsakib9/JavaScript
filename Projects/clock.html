@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<div class="">
+  <button type="button" onclick="">Start</button>
+  <img src="key.png" id="myimage" alt="">
+</div>
+
+    <h3>Now Time</h3>
+    <div class="" id="hour"> </div>
+    <div class="" id="minute"> </div>
+    <div class="" id="second"> </div>
+
+    <script type="text/javascript">
+var element = document.getElementById("hour").innerHTML = hour;
+var duration = 1000;
+var hidtime = 1000;
+var showtime = 1000;
+  function setOpacity(value){
+    element.style.opacity = value
+  }
+
+
+
+    
+  function fadeout(){
+    for(i=0; i<=1; i+=)
+  }
+  function fadein(){
+
+  }
+
+
+//make clock under.
+function clock(){
+  var date = new Date();
+
+  var hour = date.getHours();
+  var minute = date.getMinutes();
+  var second = date.getSeconds();
+
+  document.getElementById("hour").innerHTML = hour;
+  document.getElementById("minute").innerHTML = minute;
+  document.getElementById("second").innerHTML = second;
+}
+    setInterval(clock, 100);
+
+
+
+
+    </script>
+
+  </body>
+</html>
